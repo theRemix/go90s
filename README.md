@@ -1,5 +1,7 @@
 # theRemix/go90s
 
+[![CircleCI](https://circleci.com/gh/theRemix/go90s.svg?style=svg)](https://circleci.com/gh/theRemix/go90s)
+
 Go lib for Nineties Namer
 
 Outputs a random name. Good for when you need to generate random nostalgic names.
