@@ -44,8 +44,8 @@ func GetName(input string) string {
 }
 
 // input is 5-10 digits
-// if the first number is 1, use verb
-// if the second and third number is also 1, also use adjective
+// if the first and second number is 1, use verb
+// if the third number is also 1, also use adjective
 // split the digits, in 2 or 3 parts, concat them, then mod
 func getHash(input string) *rhash {
 	h := fnv.New32a()
@@ -66,9 +66,9 @@ func getHash(input string) *rhash {
 		splitDigits = append(splitDigits, j)
 	}
 
-	if splitDigits[0] == 1 {
+	if splitDigits[0] == 1 && splitDigits[1] == 1 {
 
-		if splitDigits[1] == 1 && splitDigits[2] == 1 {
+		if splitDigits[2] == 1 {
 			// adjective + name + verb
 			splitidx = len(digits) / 3
 			aDigits = splitDigits[0:splitidx]
