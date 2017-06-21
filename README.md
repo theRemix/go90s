@@ -8,6 +8,11 @@ Outputs a random name. Good for when you need to generate random nostalgic names
 
 `GetName(input)` will hash your input so you'll always get the same output... until the `names` list gets updated.
 
+## 90s.fun Implementation
+
+[https://90s.fun](https://90s.fun)
+
+
 ## Usage
 
 ```go
